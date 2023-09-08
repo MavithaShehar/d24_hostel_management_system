@@ -118,6 +118,7 @@ public class Reservation_controller implements Initializable {
     void saveOnAction(ActionEvent event) {
 
         boolean isValid = check();
+
         if (isValid){
             try {
                 StudentDTO student = new StudentDTO(

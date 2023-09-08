@@ -1,18 +1,28 @@
 package com.example.hibernate.bo.custom;
 
+import com.example.hibernate.bo.SuperBO;
+import com.example.hibernate.dto.ReservationDTO;
+import com.example.hibernate.dto.RoomDTO;
+import com.example.hibernate.dto.StudentDTO;
+
 import java.util.List;
 
-public interface ReservationBO<T> extends StudentBO{
+public interface ReservationBO<T> extends SuperBO {
 
-    public List<T> getAllReservations();
+    String setReservationID()throws Exception;
 
-    public boolean addReservation(T entity);
+    RoomDTO getRooms(String value)throws Exception;
 
-    public boolean updateReservation(T entity);
+    List<StudentDTO> getStudents()throws Exception;
 
-    public String generateNewReservationID();
+    boolean registerStudent(ReservationDTO reservation)throws Exception;
 
-    public boolean deleteReservation(String id);
+    List<RoomDTO> getAllRooms()throws Exception;
 
-    public T searchReservation(String id);
+    List<ReservationDTO> getAllDetails()throws Exception;
+
+    ReservationDTO setFields(String text)throws Exception;
+
+    boolean UpdateStudent(ReservationDTO reservation)throws Exception;
+
 }

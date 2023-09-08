@@ -9,19 +9,13 @@ import java.util.List;
 
 public interface RoomBO extends SuperBO {
 
-    String setReservationID()throws Exception;
+    public boolean save(RoomDTO room)throws Exception;
 
-    RoomDTO getRooms(String value)throws Exception;
+    boolean update(RoomDTO room)throws Exception;
 
-    List<StudentDTO> getStudents()throws Exception;
+    boolean delete(String text)throws Exception;
 
-    boolean registerStudent(ReservationDTO reservation)throws Exception;
+    RoomDTO setFields(String text)throws Exception;
 
-    List<RoomDTO> getAllRooms()throws Exception;
-
-    List<ReservationDTO> getAllDetails()throws Exception;
-
-    ReservationDTO setFields(String text)throws Exception;
-
-    boolean UpdateStudent(ReservationDTO reservation)throws Exception;
+    List<RoomDTO> getAll() throws Exception;
 }
