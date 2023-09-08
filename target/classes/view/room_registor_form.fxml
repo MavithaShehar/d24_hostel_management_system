@@ -31,20 +31,20 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="175.0" layoutY="45.0" prefHeight="29.0" prefWidth="228.0" />
-      <TextField layoutX="175.0" layoutY="145.0" prefHeight="29.0" prefWidth="228.0" />
-      <TextField layoutX="175.0" layoutY="195.0" prefHeight="29.0" prefWidth="228.0" />
-      <JFXButton layoutX="478.0" layoutY="45.0" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: #007FFF;" text="save" />
-      <JFXButton layoutX="478.0" layoutY="109.0" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: green;" text="update" />
-      <JFXButton layoutX="478.0" layoutY="184.0" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: red;" text="remove" />
-      <TableView layoutX="102.0" layoutY="282.0" prefHeight="291.0" prefWidth="660.0">
+      <TextField fx:id="room_type_ID" layoutX="175.0" layoutY="45.0" prefHeight="29.0" prefWidth="228.0" />
+      <TextField fx:id="key_money" layoutX="175.0" layoutY="145.0" prefHeight="29.0" prefWidth="228.0" />
+      <TextField fx:id="room_qty" layoutX="175.0" layoutY="195.0" prefHeight="29.0" prefWidth="228.0" />
+      <JFXButton layoutX="478.0" layoutY="45.0" onAction="#saveOnAction" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: #007FFF;" text="save" />
+      <JFXButton layoutX="478.0" layoutY="109.0" onAction="#updateOnAction" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: green;" text="update" />
+      <JFXButton layoutX="478.0" layoutY="184.0" onAction="#deleteOnAction" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: red;" text="remove" />
+      <TableView fx:id="tabel_room" layoutX="102.0" layoutY="282.0" prefHeight="291.0" prefWidth="660.0">
         <columns>
-          <TableColumn prefWidth="155.0" text="C1" />
-          <TableColumn prefWidth="155.0" text="C2" />
-            <TableColumn prefWidth="155.0" text="C2" />
-            <TableColumn prefWidth="155.0" text="C2" />
+          <TableColumn fx:id="col_room_type_id" prefWidth="155.0" text="room type Id" />
+          <TableColumn fx:id="col_type" prefWidth="155.0" text="type" />
+            <TableColumn fx:id="col_key_money" prefWidth="155.0" text="key money" />
+            <TableColumn fx:id="col_room_qty" prefWidth="155.0" text="rom.Qty" />
         </columns>
       </TableView>
-      <ComboBox layoutX="175.0" layoutY="95.0" prefHeight="29.0" prefWidth="228.0" />
+      <ComboBox fx:id="type" layoutX="175.0" layoutY="95.0" prefHeight="29.0" prefWidth="228.0" />
    </children>
 </AnchorPane>

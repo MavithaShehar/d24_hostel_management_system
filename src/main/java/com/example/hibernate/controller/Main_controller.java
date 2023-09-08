@@ -1,5 +1,6 @@
 package com.example.hibernate.controller;
 
+import com.example.hibernate.dto.UserDTO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -59,4 +60,8 @@ public class Main_controller {
 
     }
 
+    public void setUser(UserDTO userDTO) {
+
+
+    }
 }

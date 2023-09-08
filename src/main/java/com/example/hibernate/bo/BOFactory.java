@@ -1,5 +1,7 @@
 package com.example.hibernate.bo;
 
+import com.example.hibernate.bo.custom.impl.LoginBOImpl;
+import com.example.hibernate.bo.custom.impl.ReservationBOImpl;
 import com.example.hibernate.bo.custom.impl.RoomBOImpl;
 import com.example.hibernate.bo.custom.impl.StudentBOImpl;
 
@@ -13,7 +15,7 @@ public class BOFactory {
     }
 
     public enum BOTypes {
-        STUDENT, ROOM, RESERVATION;
+        STUDENT, ROOM, RESERVATION,LOGIN;
 
     }
 
@@ -21,6 +23,8 @@ public class BOFactory {
         switch (type){
             case STUDENT: return new StudentBOImpl();
             case ROOM: return new RoomBOImpl();
+            case RESERVATION: return new ReservationBOImpl();
+            case LOGIN: return new LoginBOImpl();
             default: return null;
         }
     }

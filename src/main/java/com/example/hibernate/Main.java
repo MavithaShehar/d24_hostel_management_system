@@ -15,7 +15,7 @@ public class Main extends Application {
 //        stage.setTitle("login Manage");
 //        stage.show();
 
-        FXMLLoader fxmlLoader=new FXMLLoader(Main.class.getResource("/view/login_form.fxml"));
+        FXMLLoader fxmlLoader=new FXMLLoader(Main.class.getResource("/view/main-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.centerOnScreen();
