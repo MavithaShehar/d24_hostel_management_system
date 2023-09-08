@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root1" prefHeight="620.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hibernate.controller.Room_controller">
+   <children>
+      <Text layoutX="60.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="room type ID" wrappingWidth="105.78466796875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="60.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="type" wrappingWidth="105.78466796875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="60.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="key money" wrappingWidth="105.78466796875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="60.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="room qty" wrappingWidth="105.78466796875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="room_type_ID" layoutX="175.0" layoutY="45.0" prefHeight="29.0" prefWidth="228.0" />
+      <TextField fx:id="key_money" layoutX="175.0" layoutY="145.0" prefHeight="29.0" prefWidth="228.0" />
+      <TextField fx:id="room_qty" layoutX="175.0" layoutY="195.0" prefHeight="29.0" prefWidth="228.0" />
+      <JFXButton layoutX="478.0" layoutY="45.0" onAction="#saveOnAction" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: #007FFF;" text="save" />
+      <JFXButton layoutX="478.0" layoutY="109.0" onAction="#updateOnAction" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: green;" text="update" />
+      <JFXButton layoutX="478.0" layoutY="184.0" onAction="#deleteOnAction" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: red;" text="remove" />
+      <TableView fx:id="tabel_room" layoutX="102.0" layoutY="282.0" prefHeight="291.0" prefWidth="660.0">
+        <columns>
+          <TableColumn fx:id="col_room_type_id" prefWidth="155.0" text="room type Id" />
+          <TableColumn fx:id="col_type" prefWidth="155.0" text="type" />
+            <TableColumn fx:id="col_key_money" prefWidth="155.0" text="key money" />
+            <TableColumn fx:id="col_room_qty" prefWidth="155.0" text="rom.Qty" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="type" layoutX="175.0" layoutY="95.0" prefHeight="29.0" prefWidth="228.0" />
+   </children>
+</AnchorPane>

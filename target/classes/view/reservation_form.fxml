@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="620.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hibernate.controller.Reservation_controller">
+   <children>
+      <Text layoutX="69.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="reservation ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="69.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="room type ID" wrappingWidth="99.26515460014343">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="69.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="student ID" wrappingWidth="91.78466796875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="69.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date" wrappingWidth="91.78466796875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="69.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="status" wrappingWidth="91.78466796875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField layoutX="206.0" layoutY="48.0" prefHeight="29.0" prefWidth="195.0" />
+      <TextField layoutX="206.0" layoutY="145.0" prefHeight="29.0" prefWidth="195.0" />
+      <DatePicker layoutX="206.0" layoutY="96.0" />
+      <ComboBox layoutX="206.0" layoutY="194.0" prefHeight="29.0" prefWidth="195.0" />
+      <TextField layoutX="205.0" layoutY="247.0" prefHeight="29.0" prefWidth="195.0" />
+      <JFXButton layoutX="493.0" layoutY="58.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: #007FFF;" text="save" />
+      <JFXButton layoutX="493.0" layoutY="122.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: green;" text="update" />
+      <JFXButton layoutX="493.0" layoutY="188.0" prefHeight="47.0" prefWidth="92.0" style="-fx-background-color: red;" text="remove" />
+   </children>
+</AnchorPane>

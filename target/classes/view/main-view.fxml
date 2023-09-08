@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="700.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hibernate.controller.Main_controller">
+   <children>
+      <JFXButton layoutX="47.0" layoutY="66.0" onAction="#dashboardOnAction" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: lightblue;" text="Dashboard" AnchorPane.bottomAnchor="564.0" AnchorPane.topAnchor="66.0" />
+      <JFXButton layoutX="47.0" layoutY="177.0" onAction="#registerOnAction" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: lightblue;" text="Register Student" />
+      <JFXButton layoutX="48.0" layoutY="287.0" onAction="#roomOnAction" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: lightblue;" text="Manage Rooms" />
+      <JFXButton layoutX="48.0" layoutY="398.0" onAction="#reserveOnAction" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: lightblue;" text="Reserve Room" />
+      <AnchorPane fx:id="root1" layoutX="258.0" layoutY="66.0" prefHeight="620.0" prefWidth="1070.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Pane layoutX="55.0" layoutY="61.0" prefHeight="200.0" prefWidth="372.0" style="-fx-background-color: blue;">
+               <children>
+                  <Text layoutX="30.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Rooms" wrappingWidth="168.9560546875">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="59.0" layoutY="75.0" text="0">
+                     <font>
+                        <Font name="System Bold" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="55.0" layoutY="351.0" prefHeight="200.0" prefWidth="372.0" style="-fx-background-color: blue;">
+               <children>
+                  <Text layoutX="42.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available" wrappingWidth="114.9560546875">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="59.0" layoutY="75.0" text="0">
+                     <font>
+                        <Font name="System Bold" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="513.0" layoutY="61.0" prefHeight="200.0" prefWidth="372.0" style="-fx-background-color: blue;">
+               <children>
+                  <Text layoutX="14.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registore Student" wrappingWidth="224.9560546875">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="59.0" layoutY="75.0" text="0">
+                     <font>
+                        <Font name="System Bold" size="50.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
